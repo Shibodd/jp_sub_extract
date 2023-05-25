@@ -1,6 +1,6 @@
 import lib.subs_tokenizer as subs_tokenizer
 import lib.jmdict_whitelist as jmdict_whitelist
-import pickle
+
 import pathlib
 
 def get_whitelist(jmdict_path, whitelist_pickle_path = None):
@@ -10,6 +10,9 @@ def get_whitelist(jmdict_path, whitelist_pickle_path = None):
   otherwise, it generates a whitelist by parsing the JMdict file at jmdict_path,
   pickles the result into whitelist_pickle_path, and returns the whitelist.
   """
+
+  if whitelist_pickle_path is not None:
+    import pickle
 
   if isinstance(whitelist_pickle_path, str):
     whitelist_pickle_path = pathlib.Path(whitelist_pickle_path)
