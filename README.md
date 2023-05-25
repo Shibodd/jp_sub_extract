@@ -4,8 +4,7 @@ Extracts Japanese words from an .srt subtitles file, filters them using the JMdi
 Not available as a pip package.
 
 Prerequisites:
-Python 3
-The following pip packages (note that you can choose the sudachidict-* version between small, core, full: read https://github.com/WorksApplications/SudachiPy#dictionary-edition for details):
+Python 3, and the following pip packages (note that you can choose the sudachidict-* version between small, core, full: read https://github.com/WorksApplications/SudachiPy#dictionary-edition for details):
 ```
 pip install lxml
 pip install srt
